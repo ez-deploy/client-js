@@ -1,6 +1,6 @@
-# EzDeployApiserver.IdentityApi
+# EasyDeploy.IdentityApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *https://virtserver.swaggerhub.com/wang-sy/easy-deploy/1.0.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,11 +20,11 @@ Create User
 
 ### Example
 ```javascript
-var EzDeployApiserver = require('ez_deploy_apiserver');
+var EasyDeploy = require('easy_deploy');
 
-var apiInstance = new EzDeployApiserver.IdentityApi();
+var apiInstance = new EasyDeploy.IdentityApi();
 
-var body = new EzDeployApiserver.UserInfo(); // UserInfo | 
+var body = new EasyDeploy.UserInfo(); // UserInfo | 
 
 
 var callback = function(error, data, response) {
@@ -66,11 +66,11 @@ User Login
 
 ### Example
 ```javascript
-var EzDeployApiserver = require('ez_deploy_apiserver');
+var EasyDeploy = require('easy_deploy');
 
-var apiInstance = new EzDeployApiserver.IdentityApi();
+var apiInstance = new EasyDeploy.IdentityApi();
 
-var body = new EzDeployApiserver.UserInfo(); // UserInfo | 
+var body = new EasyDeploy.UserInfo(); // UserInfo | 
 
 
 var callback = function(error, data, response) {
@@ -112,8 +112,8 @@ Logout
 
 ### Example
 ```javascript
-var EzDeployApiserver = require('ez_deploy_apiserver');
-var defaultClient = EzDeployApiserver.ApiClient.instance;
+var EasyDeploy = require('easy_deploy');
+var defaultClient = EasyDeploy.ApiClient.instance;
 
 // Configure API key authorization: key
 var key = defaultClient.authentications['key'];
@@ -121,7 +121,7 @@ key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //key.apiKeyPrefix = 'Token';
 
-var apiInstance = new EzDeployApiserver.IdentityApi();
+var apiInstance = new EasyDeploy.IdentityApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -159,8 +159,8 @@ Get Current User's Info
 
 ### Example
 ```javascript
-var EzDeployApiserver = require('ez_deploy_apiserver');
-var defaultClient = EzDeployApiserver.ApiClient.instance;
+var EasyDeploy = require('easy_deploy');
+var defaultClient = EasyDeploy.ApiClient.instance;
 
 // Configure API key authorization: key
 var key = defaultClient.authentications['key'];
@@ -168,7 +168,7 @@ key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //key.apiKeyPrefix = 'Token';
 
-var apiInstance = new EzDeployApiserver.IdentityApi();
+var apiInstance = new EasyDeploy.IdentityApi();
 
 var callback = function(error, data, response) {
   if (error) {

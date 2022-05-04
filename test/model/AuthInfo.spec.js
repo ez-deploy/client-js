@@ -1,6 +1,6 @@
 /*
- * ez-deploy apiserver.
- * apiserver
+ * easy-deploy
+ * easy-deploy
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,9 +22,9 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.EzDeployApiserver);
+    factory(root.expect, root.EasyDeploy);
   }
-}(this, function(expect, EzDeployApiserver) {
+}(this, function(expect, EasyDeploy) {
   'use strict';
 
   var instance;
@@ -32,12 +32,12 @@
   describe('(package)', function() {
     describe('AuthInfo', function() {
       beforeEach(function() {
-        instance = new EzDeployApiserver.AuthInfo();
+        instance = new EasyDeploy.AuthInfo();
       });
 
       it('should create an instance of AuthInfo', function() {
         // TODO: update the code to test AuthInfo
-        expect(instance).to.be.a(EzDeployApiserver.AuthInfo);
+        expect(instance).to.be.a(EasyDeploy.AuthInfo);
       });
 
       it('should have the property userInfo (base name: "user_info")', function() {

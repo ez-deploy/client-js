@@ -1,4 +1,4 @@
-# EzDeployApiserver.UserInfo
+# EasyDeploy.UserInfo
 
 ## Properties
 Name | Type | Description | Notes

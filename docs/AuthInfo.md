@@ -1,4 +1,4 @@
-# EzDeployApiserver.AuthInfo
+# EasyDeploy.AuthInfo
 
 ## Properties
 Name | Type | Description | Notes

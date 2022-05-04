@@ -1,6 +1,6 @@
 /*
- * ez-deploy apiserver.
- * apiserver
+ * easy-deploy
+ * easy-deploy
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.EzDeployApiserver);
+    factory(root.expect, root.EasyDeploy);
   }
-}(this, function(expect, EzDeployApiserver) {
+}(this, function(expect, EasyDeploy) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new EzDeployApiserver.IdentityApi();
+    instance = new EasyDeploy.IdentityApi();
   });
 
   describe('(package)', function() {
@@ -39,7 +39,7 @@
         it('should call createUser successfully', function(done) {
           // TODO: uncomment, update parameter values for createUser call and complete the assertions
           /*
-          var body = new EzDeployApiserver.UserInfo();
+          var body = new EasyDeploy.UserInfo();
           body.id = 1;
           body.userName = "foobar";
           body.password = "foobar123";
@@ -51,7 +51,7 @@
               return;
             }
             // TODO: update response assertions
-            expect(data).to.be.a(EzDeployApiserver.ResponsesCreated);
+            expect(data).to.be.a(EasyDeploy.ResponsesCreated);
 
             done();
           });
@@ -64,7 +64,7 @@
         it('should call login successfully', function(done) {
           // TODO: uncomment, update parameter values for login call and complete the assertions
           /*
-          var body = new EzDeployApiserver.UserInfo();
+          var body = new EasyDeploy.UserInfo();
           body.id = 1;
           body.userName = "foobar";
           body.password = "foobar123";
@@ -76,7 +76,7 @@
               return;
             }
             // TODO: update response assertions
-            expect(data).to.be.a(EzDeployApiserver.UserInfo);
+            expect(data).to.be.a(EasyDeploy.UserInfo);
             expect(data.id).to.be.a('number');
             expect(data.id).to.be(1);
             expect(data.userName).to.be.a('string');
@@ -122,7 +122,7 @@
               return;
             }
             // TODO: update response assertions
-            expect(data).to.be.a(EzDeployApiserver.UserInfo);
+            expect(data).to.be.a(EasyDeploy.UserInfo);
             expect(data.id).to.be.a('number');
             expect(data.id).to.be(1);
             expect(data.userName).to.be.a('string');

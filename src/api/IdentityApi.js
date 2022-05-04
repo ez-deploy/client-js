@@ -1,6 +1,6 @@
 /*
- * ez-deploy apiserver.
- * apiserver
+ * easy-deploy
+ * easy-deploy
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/ResponsesConflict'), require('../model/ResponsesCreated'), require('../model/ResponsesInternalServerError'), require('../model/ResponsesUnauthorized'), require('../model/UserInfo'));
   } else {
     // Browser globals (root is window)
-    if (!root.EzDeployApiserver) {
-      root.EzDeployApiserver = {};
+    if (!root.EasyDeploy) {
+      root.EasyDeploy = {};
     }
-    root.EzDeployApiserver.IdentityApi = factory(root.EzDeployApiserver.ApiClient, root.EzDeployApiserver.ResponsesConflict, root.EzDeployApiserver.ResponsesCreated, root.EzDeployApiserver.ResponsesInternalServerError, root.EzDeployApiserver.ResponsesUnauthorized, root.EzDeployApiserver.UserInfo);
+    root.EasyDeploy.IdentityApi = factory(root.EasyDeploy.ApiClient, root.EasyDeploy.ResponsesConflict, root.EasyDeploy.ResponsesCreated, root.EasyDeploy.ResponsesInternalServerError, root.EasyDeploy.ResponsesUnauthorized, root.EasyDeploy.UserInfo);
   }
 }(this, function(ApiClient, ResponsesConflict, ResponsesCreated, ResponsesInternalServerError, ResponsesUnauthorized, UserInfo) {
   'use strict';

@@ -1,7 +1,7 @@
 {
-  "name": "ez_deploy_apiserver",
+  "name": "easy_deploy",
   "version": "1.0.0",
-  "description": "apiserver",
+  "description": "easy_deploy",
   "license": "Unlicense",
   "main": "src/index.js",
   "scripts": {

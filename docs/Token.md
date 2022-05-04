@@ -1,4 +1,4 @@
-# EzDeployApiserver.Token
+# EasyDeploy.Token
 
 ## Properties
 Name | Type | Description | Notes
