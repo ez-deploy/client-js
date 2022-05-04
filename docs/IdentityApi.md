@@ -1,6 +1,6 @@
-# EasyDeploy.IdentityApi
+# EzDeployApiserver.IdentityApi
 
-All URIs are relative to *https://virtserver.swaggerhub.com/wang-sy/easy-deploy/1.0.0*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="createUser"></a>
 # **createUser**
-> ResponsesCreated createUser(body)
+> Error createUser(body)
 
 
 
@@ -20,11 +20,11 @@ Create User
 
 ### Example
 ```javascript
-var EasyDeploy = require('easy_deploy');
+var EzDeployApiserver = require('ez_deploy_apiserver');
 
-var apiInstance = new EasyDeploy.IdentityApi();
+var apiInstance = new EzDeployApiserver.IdentityApi();
 
-var body = new EasyDeploy.UserInfo(); // UserInfo | 
+var body = new EzDeployApiserver.UserInfo(); // UserInfo | 
 
 
 var callback = function(error, data, response) {
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ResponsesCreated**](ResponsesCreated.md)
+[**Error**](Error.md)
 
 ### Authorization
 
@@ -66,11 +66,11 @@ User Login
 
 ### Example
 ```javascript
-var EasyDeploy = require('easy_deploy');
+var EzDeployApiserver = require('ez_deploy_apiserver');
 
-var apiInstance = new EasyDeploy.IdentityApi();
+var apiInstance = new EzDeployApiserver.IdentityApi();
 
-var body = new EasyDeploy.UserInfo(); // UserInfo | 
+var body = new EzDeployApiserver.UserInfo(); // UserInfo | 
 
 
 var callback = function(error, data, response) {
@@ -112,8 +112,8 @@ Logout
 
 ### Example
 ```javascript
-var EasyDeploy = require('easy_deploy');
-var defaultClient = EasyDeploy.ApiClient.instance;
+var EzDeployApiserver = require('ez_deploy_apiserver');
+var defaultClient = EzDeployApiserver.ApiClient.instance;
 
 // Configure API key authorization: key
 var key = defaultClient.authentications['key'];
@@ -121,7 +121,7 @@ key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //key.apiKeyPrefix = 'Token';
 
-var apiInstance = new EasyDeploy.IdentityApi();
+var apiInstance = new EzDeployApiserver.IdentityApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -159,8 +159,8 @@ Get Current User's Info
 
 ### Example
 ```javascript
-var EasyDeploy = require('easy_deploy');
-var defaultClient = EasyDeploy.ApiClient.instance;
+var EzDeployApiserver = require('ez_deploy_apiserver');
+var defaultClient = EzDeployApiserver.ApiClient.instance;
 
 // Configure API key authorization: key
 var key = defaultClient.authentications['key'];
@@ -168,7 +168,7 @@ key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //key.apiKeyPrefix = 'Token';
 
-var apiInstance = new EasyDeploy.IdentityApi();
+var apiInstance = new EzDeployApiserver.IdentityApi();
 
 var callback = function(error, data, response) {
   if (error) {

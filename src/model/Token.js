@@ -1,6 +1,6 @@
 /*
- * easy-deploy
- * easy-deploy
+ * ez-deploy apiserver.
+ * apiserver
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -19,10 +19,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.EasyDeploy) {
-      root.EasyDeploy = {};
+    if (!root.EzDeployApiserver) {
+      root.EzDeployApiserver = {};
     }
-    root.EasyDeploy.Token = factory(root.EasyDeploy.ApiClient);
+    root.EzDeployApiserver.Token = factory(root.EzDeployApiserver.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';

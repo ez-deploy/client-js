@@ -1,6 +1,6 @@
 /*
- * easy-deploy
- * easy-deploy
+ * ez-deploy apiserver.
+ * apiserver
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -19,10 +19,10 @@
     module.exports = factory(require('superagent'), require('querystring'));
   } else {
     // Browser globals (root is window)
-    if (!root.EasyDeploy) {
-      root.EasyDeploy = {};
+    if (!root.EzDeployApiserver) {
+      root.EzDeployApiserver = {};
     }
-    root.EasyDeploy.ApiClient = factory(root.superagent, root.querystring);
+    root.EzDeployApiserver.ApiClient = factory(root.superagent, root.querystring);
   }
 }(this, function(superagent, querystring) {
   'use strict';
@@ -43,9 +43,9 @@
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default https://virtserver.swaggerhub.com/wang-sy/easy-deploy/1.0.0
+     * @default http://localhost
      */
-    this.basePath = 'https://virtserver.swaggerhub.com/wang-sy/easy-deploy/1.0.0'.replace(/\/+$/, '');
+    this.basePath = 'http://localhost'.replace(/\/+$/, '');
 
     /**
      * The authentication methods to be included for all API calls.

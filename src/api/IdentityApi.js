@@ -1,6 +1,6 @@
 /*
- * easy-deploy
- * easy-deploy
+ * ez-deploy apiserver.
+ * apiserver
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -16,15 +16,15 @@
 (function(root, factory) {
   if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/ResponsesConflict'), require('../model/ResponsesCreated'), require('../model/ResponsesInternalServerError'), require('../model/ResponsesUnauthorized'), require('../model/UserInfo'));
+    module.exports = factory(require('../ApiClient'), require('../model/Error'), require('../model/UserInfo'));
   } else {
     // Browser globals (root is window)
-    if (!root.EasyDeploy) {
-      root.EasyDeploy = {};
+    if (!root.EzDeployApiserver) {
+      root.EzDeployApiserver = {};
     }
-    root.EasyDeploy.IdentityApi = factory(root.EasyDeploy.ApiClient, root.EasyDeploy.ResponsesConflict, root.EasyDeploy.ResponsesCreated, root.EasyDeploy.ResponsesInternalServerError, root.EasyDeploy.ResponsesUnauthorized, root.EasyDeploy.UserInfo);
+    root.EzDeployApiserver.IdentityApi = factory(root.EzDeployApiserver.ApiClient, root.EzDeployApiserver.Error, root.EzDeployApiserver.UserInfo);
   }
-}(this, function(ApiClient, ResponsesConflict, ResponsesCreated, ResponsesInternalServerError, ResponsesUnauthorized, UserInfo) {
+}(this, function(ApiClient, Error, UserInfo) {
   'use strict';
 
   /**
@@ -48,7 +48,7 @@
      * Callback function to receive the result of the createUser operation.
      * @callback module:api/IdentityApi~createUserCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponsesCreated} data The data returned by the service call.
+     * @param {module:model/Error} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -56,7 +56,7 @@
      * Create User
      * @param {module:model/UserInfo} body 
      * @param {module:api/IdentityApi~createUserCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/ResponsesCreated}
+     * data is of type: {@link module:model/Error}
      */
     this.createUser = function(body, callback) {
       var postBody = body;
@@ -81,7 +81,7 @@
       var authNames = [];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = ResponsesCreated;
+      var returnType = Error;
 
       return this.apiClient.callApi(
         '/user/create', 'POST',

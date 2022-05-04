@@ -1,4 +1,4 @@
-# EasyDeploy.Error
+# EzDeployApiserver.Error
 
 ## Properties
 Name | Type | Description | Notes

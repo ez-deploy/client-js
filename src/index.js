@@ -1,6 +1,6 @@
 /*
- * easy-deploy
- * easy-deploy
+ * ez-deploy apiserver.
+ * apiserver
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,14 +22,14 @@
   'use strict';
 
   /**
-   * easy_deploy.<br>
+   * apiserver.<br>
    * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var EasyDeploy = require('index'); // See note below*.
-   * var xxxSvc = new EasyDeploy.XxxApi(); // Allocate the API class we're going to use.
-   * var yyyModel = new EasyDeploy.Yyy(); // Construct a model instance.
+   * var EzDeployApiserver = require('index'); // See note below*.
+   * var xxxSvc = new EzDeployApiserver.XxxApi(); // Allocate the API class we're going to use.
+   * var yyyModel = new EzDeployApiserver.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -41,8 +41,8 @@
    * <p>
    * A non-AMD browser application (discouraged) might do something like this:
    * <pre>
-   * var xxxSvc = new EasyDeploy.XxxApi(); // Allocate the API class we're going to use.
-   * var yyy = new EasyDeploy.Yyy(); // Construct a model instance.
+   * var xxxSvc = new EzDeployApiserver.XxxApi(); // Allocate the API class we're going to use.
+   * var yyy = new EzDeployApiserver.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
