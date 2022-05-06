@@ -118,6 +118,7 @@ All URIs are relative to *http://localhost/api*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *EzDeployApiserver.IdentityApi* | [**createUser**](docs/IdentityApi.md#createUser) | **POST** /user/create | 
+*EzDeployApiserver.IdentityApi* | [**getUser**](docs/IdentityApi.md#getUser) | **GET** /user/get | 
 *EzDeployApiserver.IdentityApi* | [**login**](docs/IdentityApi.md#login) | **POST** /user/login | 
 *EzDeployApiserver.IdentityApi* | [**logout**](docs/IdentityApi.md#logout) | **GET** /user/logout | 
 *EzDeployApiserver.IdentityApi* | [**whoami**](docs/IdentityApi.md#whoami) | **GET** /whoami | 

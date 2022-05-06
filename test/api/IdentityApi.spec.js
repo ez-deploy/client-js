@@ -59,6 +59,35 @@
           done();
         });
       });
+      describe('getUser', function() {
+        it('should call getUser successfully', function(done) {
+          // TODO: uncomment, update parameter values for getUser call and complete the assertions
+          /*
+          var id = 56;
+
+          instance.getUser(id, function(error, data, response) {
+            if (error) {
+              done(error);
+              return;
+            }
+            // TODO: update response assertions
+            expect(data).to.be.a(EzDeployApiserver.UserInfo);
+            expect(data.id).to.be.a('number');
+            expect(data.id).to.be(1);
+            expect(data.userName).to.be.a('string');
+            expect(data.userName).to.be("foobar");
+            expect(data.password).to.be.a('string');
+            expect(data.password).to.be("foobar123");
+            expect(data.email).to.be.a('string');
+            expect(data.email).to.be("foo@bar.com");
+
+            done();
+          });
+          */
+          // TODO: uncomment and complete method invocation above, then delete this line and the next:
+          done();
+        });
+      });
       describe('login', function() {
         it('should call login successfully', function(done) {
           // TODO: uncomment, update parameter values for login call and complete the assertions

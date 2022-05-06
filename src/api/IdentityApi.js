@@ -91,6 +91,53 @@
     }
 
     /**
+     * Callback function to receive the result of the getUser operation.
+     * @callback module:api/IdentityApi~getUserCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/UserInfo} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get User Info by id
+     * @param {Number} id User id
+     * @param {module:api/IdentityApi~getUserCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/UserInfo}
+     */
+    this.getUser = function(id, callback) {
+      var postBody = null;
+
+      // verify the required parameter 'id' is set
+      if (id === undefined || id === null) {
+        throw new Error("Missing the required parameter 'id' when calling getUser");
+      }
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+        'id': id,
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = UserInfo;
+
+      return this.apiClient.callApi(
+        '/user/get', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the login operation.
      * @callback module:api/IdentityApi~loginCallback
      * @param {String} error Error message, if any.

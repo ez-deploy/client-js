@@ -5,6 +5,7 @@ All URIs are relative to *http://localhost/api*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createUser**](IdentityApi.md#createUser) | **POST** /user/create | 
+[**getUser**](IdentityApi.md#getUser) | **GET** /user/get | 
 [**login**](IdentityApi.md#login) | **POST** /user/login | 
 [**logout**](IdentityApi.md#logout) | **GET** /user/logout | 
 [**whoami**](IdentityApi.md#whoami) | **GET** /whoami | 
@@ -46,6 +47,52 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Error**](Error.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="getUser"></a>
+# **getUser**
+> UserInfo getUser(id)
+
+
+
+Get User Info by id
+
+### Example
+```javascript
+var EzDeployApiserver = require('ez_deploy_apiserver');
+
+var apiInstance = new EzDeployApiserver.IdentityApi();
+
+var id = 56; // Number | User id
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.getUser(id, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| User id | 
+
+### Return type
+
+[**UserInfo**](UserInfo.md)
 
 ### Authorization
 
