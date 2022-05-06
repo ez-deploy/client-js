@@ -113,7 +113,7 @@ api.createUser(body, callback);
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *http://localhost/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -121,14 +121,38 @@ Class | Method | HTTP request | Description
 *EzDeployApiserver.IdentityApi* | [**login**](docs/IdentityApi.md#login) | **POST** /user/login | 
 *EzDeployApiserver.IdentityApi* | [**logout**](docs/IdentityApi.md#logout) | **GET** /user/logout | 
 *EzDeployApiserver.IdentityApi* | [**whoami**](docs/IdentityApi.md#whoami) | **GET** /whoami | 
+*EzDeployApiserver.ProjectApi* | [**createProject**](docs/ProjectApi.md#createProject) | **POST** /project/create | 
+*EzDeployApiserver.ProjectApi* | [**getProject**](docs/ProjectApi.md#getProject) | **GET** /project/get | 
+*EzDeployApiserver.RBACApi* | [**getProjectRBAC**](docs/RBACApi.md#getProjectRBAC) | **GET** /rbac/project/get | 
+*EzDeployApiserver.RBACApi* | [**getUserRBAC**](docs/RBACApi.md#getUserRBAC) | **GET** /rbac/user/get | 
+*EzDeployApiserver.ServiceApi* | [**createService**](docs/ServiceApi.md#createService) | **POST** /service/create | 
+*EzDeployApiserver.ServiceApi* | [**createServiceVersion**](docs/ServiceApi.md#createServiceVersion) | **POST** /service/version/create | 
+*EzDeployApiserver.ServiceApi* | [**deleteService**](docs/ServiceApi.md#deleteService) | **DELETE** /service/delete | 
+*EzDeployApiserver.ServiceApi* | [**getServiceVersion**](docs/ServiceApi.md#getServiceVersion) | **GET** /service/version/get | 
+*EzDeployApiserver.ServiceApi* | [**listService**](docs/ServiceApi.md#listService) | **GET** /service/list | 
+*EzDeployApiserver.ServiceApi* | [**listServicePod**](docs/ServiceApi.md#listServicePod) | **GET** /service/pod/list | 
+*EzDeployApiserver.ServiceApi* | [**listServiceVersion**](docs/ServiceApi.md#listServiceVersion) | **GET** /service/version/list | 
+*EzDeployApiserver.ServiceApi* | [**updateServiceDescription**](docs/ServiceApi.md#updateServiceDescription) | **PUT** /service/update/desc | 
+*EzDeployApiserver.ServiceApi* | [**updateServiceVersion**](docs/ServiceApi.md#updateServiceVersion) | **PUT** /service/update/deploy | 
 
 
 ## Documentation for Models
 
  - [EzDeployApiserver.AuthInfo](docs/AuthInfo.md)
+ - [EzDeployApiserver.EnvironmentVariable](docs/EnvironmentVariable.md)
  - [EzDeployApiserver.Error](docs/Error.md)
+ - [EzDeployApiserver.PodInfo](docs/PodInfo.md)
+ - [EzDeployApiserver.ProjectInfo](docs/ProjectInfo.md)
+ - [EzDeployApiserver.ProjectRole](docs/ProjectRole.md)
+ - [EzDeployApiserver.RoleInfo](docs/RoleInfo.md)
+ - [EzDeployApiserver.RoleMember](docs/RoleMember.md)
+ - [EzDeployApiserver.RolePermission](docs/RolePermission.md)
+ - [EzDeployApiserver.RoleView](docs/RoleView.md)
+ - [EzDeployApiserver.ServiceInfo](docs/ServiceInfo.md)
+ - [EzDeployApiserver.ServiceVersion](docs/ServiceVersion.md)
  - [EzDeployApiserver.Token](docs/Token.md)
  - [EzDeployApiserver.UserInfo](docs/UserInfo.md)
+ - [EzDeployApiserver.UserRole](docs/UserRole.md)
 
 
 ## Documentation for Authorization

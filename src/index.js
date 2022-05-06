@@ -16,9 +16,9 @@
 (function(factory) {
   if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/AuthInfo'), require('./model/Error'), require('./model/Token'), require('./model/UserInfo'), require('./api/IdentityApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/AuthInfo'), require('./model/EnvironmentVariable'), require('./model/Error'), require('./model/PodInfo'), require('./model/ProjectInfo'), require('./model/ProjectRole'), require('./model/RoleInfo'), require('./model/RoleMember'), require('./model/RolePermission'), require('./model/RoleView'), require('./model/ServiceInfo'), require('./model/ServiceVersion'), require('./model/Token'), require('./model/UserInfo'), require('./model/UserRole'), require('./api/IdentityApi'), require('./api/ProjectApi'), require('./api/RBACApi'), require('./api/ServiceApi'));
   }
-}(function(ApiClient, AuthInfo, Error, Token, UserInfo, IdentityApi) {
+}(function(ApiClient, AuthInfo, EnvironmentVariable, Error, PodInfo, ProjectInfo, ProjectRole, RoleInfo, RoleMember, RolePermission, RoleView, ServiceInfo, ServiceVersion, Token, UserInfo, UserRole, IdentityApi, ProjectApi, RBACApi, ServiceApi) {
   'use strict';
 
   /**
@@ -64,10 +64,60 @@
      */
     AuthInfo: AuthInfo,
     /**
+     * The EnvironmentVariable model constructor.
+     * @property {module:model/EnvironmentVariable}
+     */
+    EnvironmentVariable: EnvironmentVariable,
+    /**
      * The Error model constructor.
      * @property {module:model/Error}
      */
     Error: Error,
+    /**
+     * The PodInfo model constructor.
+     * @property {module:model/PodInfo}
+     */
+    PodInfo: PodInfo,
+    /**
+     * The ProjectInfo model constructor.
+     * @property {module:model/ProjectInfo}
+     */
+    ProjectInfo: ProjectInfo,
+    /**
+     * The ProjectRole model constructor.
+     * @property {module:model/ProjectRole}
+     */
+    ProjectRole: ProjectRole,
+    /**
+     * The RoleInfo model constructor.
+     * @property {module:model/RoleInfo}
+     */
+    RoleInfo: RoleInfo,
+    /**
+     * The RoleMember model constructor.
+     * @property {module:model/RoleMember}
+     */
+    RoleMember: RoleMember,
+    /**
+     * The RolePermission model constructor.
+     * @property {module:model/RolePermission}
+     */
+    RolePermission: RolePermission,
+    /**
+     * The RoleView model constructor.
+     * @property {module:model/RoleView}
+     */
+    RoleView: RoleView,
+    /**
+     * The ServiceInfo model constructor.
+     * @property {module:model/ServiceInfo}
+     */
+    ServiceInfo: ServiceInfo,
+    /**
+     * The ServiceVersion model constructor.
+     * @property {module:model/ServiceVersion}
+     */
+    ServiceVersion: ServiceVersion,
     /**
      * The Token model constructor.
      * @property {module:model/Token}
@@ -79,10 +129,30 @@
      */
     UserInfo: UserInfo,
     /**
+     * The UserRole model constructor.
+     * @property {module:model/UserRole}
+     */
+    UserRole: UserRole,
+    /**
      * The IdentityApi service constructor.
      * @property {module:api/IdentityApi}
      */
-    IdentityApi: IdentityApi
+    IdentityApi: IdentityApi,
+    /**
+     * The ProjectApi service constructor.
+     * @property {module:api/ProjectApi}
+     */
+    ProjectApi: ProjectApi,
+    /**
+     * The RBACApi service constructor.
+     * @property {module:api/RBACApi}
+     */
+    RBACApi: RBACApi,
+    /**
+     * The ServiceApi service constructor.
+     * @property {module:api/ServiceApi}
+     */
+    ServiceApi: ServiceApi
   };
 
   return exports;

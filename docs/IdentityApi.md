@@ -1,6 +1,6 @@
 # EzDeployApiserver.IdentityApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *http://localhost/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
