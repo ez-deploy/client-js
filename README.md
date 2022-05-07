@@ -122,6 +122,8 @@ Class | Method | HTTP request | Description
 *EzDeployApiserver.IdentityApi* | [**login**](docs/IdentityApi.md#login) | **POST** /user/login | 
 *EzDeployApiserver.IdentityApi* | [**logout**](docs/IdentityApi.md#logout) | **GET** /user/logout | 
 *EzDeployApiserver.IdentityApi* | [**whoami**](docs/IdentityApi.md#whoami) | **GET** /whoami | 
+*EzDeployApiserver.PodApi* | [**checkPodTicket**](docs/PodApi.md#checkPodTicket) | **GET** /visit/pod/ticket/check | 
+*EzDeployApiserver.PodApi* | [**createPodTicket**](docs/PodApi.md#createPodTicket) | **POST** /visit/pod/ticket/create | 
 *EzDeployApiserver.ProjectApi* | [**createProject**](docs/ProjectApi.md#createProject) | **POST** /project/create | 
 *EzDeployApiserver.ProjectApi* | [**getProject**](docs/ProjectApi.md#getProject) | **GET** /project/get | 
 *EzDeployApiserver.RBACApi* | [**getProjectRBAC**](docs/RBACApi.md#getProjectRBAC) | **GET** /rbac/project/get | 
@@ -149,6 +151,7 @@ Class | Method | HTTP request | Description
  - [EzDeployApiserver.RoleMember](docs/RoleMember.md)
  - [EzDeployApiserver.RolePermission](docs/RolePermission.md)
  - [EzDeployApiserver.RoleView](docs/RoleView.md)
+ - [EzDeployApiserver.SSHPodTicket](docs/SSHPodTicket.md)
  - [EzDeployApiserver.ServiceInfo](docs/ServiceInfo.md)
  - [EzDeployApiserver.ServiceVersion](docs/ServiceVersion.md)
  - [EzDeployApiserver.Token](docs/Token.md)

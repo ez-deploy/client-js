@@ -16,9 +16,9 @@
 (function(factory) {
   if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/AuthInfo'), require('./model/EnvironmentVariable'), require('./model/Error'), require('./model/PodInfo'), require('./model/ProjectInfo'), require('./model/ProjectRole'), require('./model/RoleInfo'), require('./model/RoleMember'), require('./model/RolePermission'), require('./model/RoleView'), require('./model/ServiceInfo'), require('./model/ServiceVersion'), require('./model/Token'), require('./model/UserInfo'), require('./model/UserRole'), require('./api/IdentityApi'), require('./api/ProjectApi'), require('./api/RBACApi'), require('./api/ServiceApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/AuthInfo'), require('./model/EnvironmentVariable'), require('./model/Error'), require('./model/PodInfo'), require('./model/ProjectInfo'), require('./model/ProjectRole'), require('./model/RoleInfo'), require('./model/RoleMember'), require('./model/RolePermission'), require('./model/RoleView'), require('./model/SSHPodTicket'), require('./model/ServiceInfo'), require('./model/ServiceVersion'), require('./model/Token'), require('./model/UserInfo'), require('./model/UserRole'), require('./api/IdentityApi'), require('./api/PodApi'), require('./api/ProjectApi'), require('./api/RBACApi'), require('./api/ServiceApi'));
   }
-}(function(ApiClient, AuthInfo, EnvironmentVariable, Error, PodInfo, ProjectInfo, ProjectRole, RoleInfo, RoleMember, RolePermission, RoleView, ServiceInfo, ServiceVersion, Token, UserInfo, UserRole, IdentityApi, ProjectApi, RBACApi, ServiceApi) {
+}(function(ApiClient, AuthInfo, EnvironmentVariable, Error, PodInfo, ProjectInfo, ProjectRole, RoleInfo, RoleMember, RolePermission, RoleView, SSHPodTicket, ServiceInfo, ServiceVersion, Token, UserInfo, UserRole, IdentityApi, PodApi, ProjectApi, RBACApi, ServiceApi) {
   'use strict';
 
   /**
@@ -109,6 +109,11 @@
      */
     RoleView: RoleView,
     /**
+     * The SSHPodTicket model constructor.
+     * @property {module:model/SSHPodTicket}
+     */
+    SSHPodTicket: SSHPodTicket,
+    /**
      * The ServiceInfo model constructor.
      * @property {module:model/ServiceInfo}
      */
@@ -138,6 +143,11 @@
      * @property {module:api/IdentityApi}
      */
     IdentityApi: IdentityApi,
+    /**
+     * The PodApi service constructor.
+     * @property {module:api/PodApi}
+     */
+    PodApi: PodApi,
     /**
      * The ProjectApi service constructor.
      * @property {module:api/ProjectApi}
