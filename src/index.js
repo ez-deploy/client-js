@@ -16,9 +16,9 @@
 (function(factory) {
   if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/AuthInfo'), require('./model/EnvironmentVariable'), require('./model/Error'), require('./model/PodInfo'), require('./model/ProjectInfo'), require('./model/ProjectRole'), require('./model/RoleInfo'), require('./model/RoleMember'), require('./model/RolePermission'), require('./model/RoleView'), require('./model/SSHPodTicket'), require('./model/ServiceInfo'), require('./model/ServiceVersion'), require('./model/Token'), require('./model/UserInfo'), require('./model/UserRole'), require('./api/IdentityApi'), require('./api/PodApi'), require('./api/ProjectApi'), require('./api/RBACApi'), require('./api/ServiceApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/AuthInfo'), require('./model/EnvironmentVariable'), require('./model/Error'), require('./model/GetTicketReq'), require('./model/PodInfo'), require('./model/ProjectInfo'), require('./model/ProjectRole'), require('./model/RoleInfo'), require('./model/RoleMember'), require('./model/RolePermission'), require('./model/RoleView'), require('./model/SSHPodTicket'), require('./model/ServiceInfo'), require('./model/ServiceVersion'), require('./model/Token'), require('./model/UserInfo'), require('./model/UserRole'), require('./api/IdentityApi'), require('./api/PodApi'), require('./api/ProjectApi'), require('./api/RBACApi'), require('./api/ServiceApi'));
   }
-}(function(ApiClient, AuthInfo, EnvironmentVariable, Error, PodInfo, ProjectInfo, ProjectRole, RoleInfo, RoleMember, RolePermission, RoleView, SSHPodTicket, ServiceInfo, ServiceVersion, Token, UserInfo, UserRole, IdentityApi, PodApi, ProjectApi, RBACApi, ServiceApi) {
+}(function(ApiClient, AuthInfo, EnvironmentVariable, Error, GetTicketReq, PodInfo, ProjectInfo, ProjectRole, RoleInfo, RoleMember, RolePermission, RoleView, SSHPodTicket, ServiceInfo, ServiceVersion, Token, UserInfo, UserRole, IdentityApi, PodApi, ProjectApi, RBACApi, ServiceApi) {
   'use strict';
 
   /**
@@ -73,6 +73,11 @@
      * @property {module:model/Error}
      */
     Error: Error,
+    /**
+     * The GetTicketReq model constructor.
+     * @property {module:model/GetTicketReq}
+     */
+    GetTicketReq: GetTicketReq,
     /**
      * The PodInfo model constructor.
      * @property {module:model/PodInfo}

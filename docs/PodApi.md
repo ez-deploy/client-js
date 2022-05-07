@@ -75,7 +75,7 @@ key.apiKey = 'YOUR API KEY';
 
 var apiInstance = new EzDeployApiserver.PodApi();
 
-var body = new EzDeployApiserver.Body(); // Body | 
+var body = new EzDeployApiserver.GetTicketReq(); // GetTicketReq | 
 
 
 var callback = function(error, data, response) {
@@ -92,7 +92,7 @@ apiInstance.createPodTicket(body, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**Body**](.md)|  | 
+ **body** | [**GetTicketReq**](GetTicketReq.md)|  | 
 
 ### Return type
 

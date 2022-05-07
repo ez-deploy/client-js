@@ -16,15 +16,15 @@
 (function(root, factory) {
   if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Body'), require('../model/Error'), require('../model/SSHPodTicket'));
+    module.exports = factory(require('../ApiClient'), require('../model/Error'), require('../model/GetTicketReq'), require('../model/SSHPodTicket'));
   } else {
     // Browser globals (root is window)
     if (!root.EzDeployApiserver) {
       root.EzDeployApiserver = {};
     }
-    root.EzDeployApiserver.PodApi = factory(root.EzDeployApiserver.ApiClient, root.EzDeployApiserver.Body, root.EzDeployApiserver.Error, root.EzDeployApiserver.SSHPodTicket);
+    root.EzDeployApiserver.PodApi = factory(root.EzDeployApiserver.ApiClient, root.EzDeployApiserver.Error, root.EzDeployApiserver.GetTicketReq, root.EzDeployApiserver.SSHPodTicket);
   }
-}(this, function(ApiClient, Body, Error, SSHPodTicket) {
+}(this, function(ApiClient, Error, GetTicketReq, SSHPodTicket) {
   'use strict';
 
   /**
@@ -101,7 +101,7 @@
 
     /**
      * Create Visit Pod Once Ticket
-     * @param {module:model/Body} body 
+     * @param {module:model/GetTicketReq} body 
      * @param {module:api/PodApi~createPodTicketCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SSHPodTicket}
      */

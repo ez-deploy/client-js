@@ -144,6 +144,7 @@ Class | Method | HTTP request | Description
  - [EzDeployApiserver.AuthInfo](docs/AuthInfo.md)
  - [EzDeployApiserver.EnvironmentVariable](docs/EnvironmentVariable.md)
  - [EzDeployApiserver.Error](docs/Error.md)
+ - [EzDeployApiserver.GetTicketReq](docs/GetTicketReq.md)
  - [EzDeployApiserver.PodInfo](docs/PodInfo.md)
  - [EzDeployApiserver.ProjectInfo](docs/ProjectInfo.md)
  - [EzDeployApiserver.ProjectRole](docs/ProjectRole.md)

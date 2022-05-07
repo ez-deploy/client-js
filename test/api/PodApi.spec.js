@@ -69,7 +69,9 @@
         it('should call createPodTicket successfully', function(done) {
           // TODO: uncomment, update parameter values for createPodTicket call and complete the assertions
           /*
-          var body = new EzDeployApiserver.Body();
+          var body = new EzDeployApiserver.GetTicketReq();
+          body.projectId = 1;
+          body.podName = "foobar-9zqb2";
 
           instance.createPodTicket(body, function(error, data, response) {
             if (error) {
